@@ -4,6 +4,7 @@ import Home from "./routes/home/home.component";
 import Navigation from "./routes/navigation/navigation.component";
 import Authenticaton from "./routes/authentication/authentication.component";
 import Shop from './routes/shop/shop.component.jsx';
+import Checkout from "./routes/checkout/checkout.component.jsx";
 
 
  
@@ -14,7 +15,8 @@ const App = ()=> {
       <Route index element={ <Home />}/> 
       <Route path="shop" element={<Shop />}/>
       <Route path="auth" element={<Authenticaton />}/>
-    </Route>
+      <Route path="checkout" element={<Checkout />}/>
+     </Route>
   </Routes>
   );
 }
